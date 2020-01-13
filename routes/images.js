@@ -94,7 +94,7 @@ router.get('/images/:id.png', function(req, res) {
 });
 
 function purgeImages(authToken) {
-  return Image.findOne({ tokenId: authToken.id, order: '"createdAt" DESC', offset: 10 }).then(function(image) {
+  return Image.findOne({ tokenId: authToken.id, order: '"createdAt" DESC', offset: config.imageQuota }).then(function(image) {
     if (image) {
       return Image.destroy({
         where: {
