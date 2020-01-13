@@ -1,6 +1,6 @@
 {
   "name": "qimg",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "all": "concurrently \"npm run api:dev\" \"npm run docs:serve\" \"npm run docs:watch\"",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "body-parser": "^1.17.1",
+    "cors": "^2.8.4",
     "debug": "^2.6.3",
     "express": "^4.15.2",
     "jade": "~1.9.1",
@@ -34,6 +35,6 @@
     "raml2html": "^5.1.0"
   },
   "engines": {
-    "node": "6.x.x"
+    "node": "6.x"
   }
 }
