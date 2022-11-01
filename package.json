@@ -24,7 +24,7 @@
     "pg": "^6.1.4",
     "pg-hstore": "^2.3.1",
     "sequelize": "^3.30.2",
-    "stylus": "0.42.3",
+    "stylus": "0.59.0",
     "underscore": "^1.8.2"
   },
   "devDependencies": {
